@@ -12,6 +12,8 @@ import BG from '@/shared/assets/images/BG (1).svg';
 import Mobile from '@/shared/assets/images/Mobile.svg';
 import Arrow from '@/shared/assets/images/Arrow (1).svg';
 import Spiral from '@/shared/assets/images/Vector 14.svg';
+import { ReastaurantCard } from "@/widgets/ReastaurantCard";
+import { ProductCard } from "@/widgets/ProductCard";
 
 const Main = () => {
   const navigate = useNavigate();
@@ -123,7 +125,32 @@ const Main = () => {
         </div>
       </div>
 
-      <div></div>
+      <div className="flex justify-center ml-24 mr-20 flex-col mt-[100px] border-b-[1px] border-b-gray-900 pb-[120px]">
+        <h1 className="text-[45px] font-semibold mb-[85px] text-center">Our Top <span className="text-[#6C5FBC]">Restaurants</span></h1>
+        <div className="flex gap-x-[30px]">
+          <ReastaurantCard />
+          <ReastaurantCard />
+          <ReastaurantCard />
+        </div>
+        <div className="text-end pt-[65px] pr-[200px] text-[20px] font-medium text-[#ACADB9]">
+          <p className="inline cursor-pointer">View All</p>
+        </div>
+      </div>
+
+      <div className="flex justify-center ml-24 mr-20 flex-col mt-[100px] border-b-[1px] border-b-gray-900 pb-[120px]">
+        <h1 className="text-[45px] font-semibold mb-[85px] text-center">Our Top <span className="text-[#6C5FBC]">Dishes</span></h1>
+        <div className="flex gap-x-[30px]">
+          <ProductCard/>
+          <ProductCard/>
+          <ProductCard/>
+          <ProductCard/>
+          <ProductCard/>
+        </div>
+        <div className="text-end pt-[65px] pr-[200px] text-[20px] font-medium text-[#ACADB9]">
+          <p className="inline cursor-pointer">View All</p>
+        </div>
+      </div>
+
       <div></div>
       <div></div>
       <div></div>

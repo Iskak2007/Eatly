@@ -1,0 +1,1 @@
+export { ReastaurantCard } from "./ui/RestauranttCard";
