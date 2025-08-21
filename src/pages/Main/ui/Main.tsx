@@ -1,19 +1,19 @@
-import Logo from "@/shared/assets/icons/Logo (3).svg";
-import { CustomLink } from "@/shared/ui/custom-link";
-import { useNavigate } from "react-router-dom";
-import Instagram from "@/shared/assets/icons/Group 888.svg";
-import IN from '@/shared/assets/icons/Path 7.svg';
-import Facebook from '@/shared/assets/icons/Path 13.svg';
-import Twitter from '@/shared/assets/icons/Path 6.svg';
-import Star from '@/shared/assets/icons/Vector (17).svg';
-import Rating from '@/shared/assets/icons/star.svg';
-import Food from '@/shared/assets/images/Hero (1).svg';
-import BG from '@/shared/assets/images/BG (1).svg';
-import Mobile from '@/shared/assets/images/Mobile.svg';
-import Arrow from '@/shared/assets/images/Arrow (1).svg';
-import Spiral from '@/shared/assets/images/Vector 14.svg';
-import { ReastaurantCard } from "@/widgets/ReastaurantCard";
-import { ProductCard } from "@/widgets/ProductCard";
+import Logo from "@/shared/assets/icons/Logo (3).svg"
+import { CustomLink } from "@/shared/ui/custom-link"
+import { useNavigate } from "react-router-dom"
+import Instagram from "@/shared/assets/icons/Group 888.svg"
+import IN from '@/shared/assets/icons/Path 7.svg'
+import Facebook from '@/shared/assets/icons/Path 13.svg'
+import Twitter from '@/shared/assets/icons/Path 6.svg'
+import Star from '@/shared/assets/icons/Vector (17).svg'
+import Rating from '@/shared/assets/icons/Star.svg'
+import Food from '@/shared/assets/images/Hero (1).svg'
+import BG from '@/shared/assets/images/BG (1).svg'
+import Mobile from '@/shared/assets/images/Mobile.svg'
+import Arrow from '@/shared/assets/images/Arrow (1).svg'
+import Spiral from '@/shared/assets/images/Vector 14.svg'
+import { ReastaurantCard } from "@/widgets/ReastaurantCard"
+import { ProductCard } from "@/widgets/ProductCard"
 
 const Main = () => {
   const navigate = useNavigate();
@@ -140,6 +140,7 @@ const Main = () => {
       <div className="flex justify-center ml-24 mr-20 flex-col mt-[100px] border-b-[1px] border-b-gray-900 pb-[120px]">
         <h1 className="text-[45px] font-semibold mb-[85px] text-center">Our Top <span className="text-[#6C5FBC]">Dishes</span></h1>
         <div className="flex gap-x-[30px]">
+          <ProductCard/>
           <ProductCard/>
           <ProductCard/>
           <ProductCard/>
